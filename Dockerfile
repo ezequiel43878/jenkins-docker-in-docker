@@ -1,9 +1,9 @@
-FROM jenkins/jenkins
+FROM jenkins/jenkins:2.289.1
 LABEL github-maintener=ezequiel43878
 USER root
 
 #Define variables
-ENV MAVEN_VERSION 3.9.0
+ENV MAVEN_VERSION=3.9.4
 
 #Update Base OS, install additional tools and docker
 RUN apt-get update && apt-get install -y \
